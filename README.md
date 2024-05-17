@@ -61,7 +61,7 @@
 <!-- Frontend -->
 <h4 align="left">Frontend</h4>
 <p align="left">
-    - React, Javascript, HTML, CSS, Bootstrap, Axios
+    - React, Javascript, HTML, CSS, Bootstrap
 </p>
 
 <!-- Backend -->
