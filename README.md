@@ -1,81 +1,77 @@
-# WebApp boilerplate with React JS and Flask API
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+<!-- Descripción -->
+<h1 align="center">BetIntel</h1>
+<h3 align="center">Plataforma estadística en la que el usuario puede registrarse para llevar un seguimiento de todos sus pronósticos y de todas sus estadísticas</h3>
+<h4>Enfocado tanto para pronosticadores como para usuarios que quieran ver quienes son los pronosticadores mas rentables y así poder seguirlos o contratar sus servicios</h4>
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+<!-- Imagen Principal -->
+<p align="center">
+    <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948334/Captura_de_pantalla_2024-05-17_141414_kf2mrh.png" alt="Principal" width="100%"/>
+</p>
 
-### 1) Installation:
+<!-- Funcionalidades -->
+1. **Registro y login:**
+    - El usuario rellena un formulario con los datos necesarios para crear su cuenta, y posteriormente se le redirige al login para que inicie sesión.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948334/Captura_de_pantalla_2024-05-17_141439_n1vhzv.png" alt="Rankings de Usuarios" width="650px"/>
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948371/Captura_de_pantalla_2024-05-17_141454_sxdhys.png" alt="Rankings de Usuarios" width="650px"/>
+    </p>
+2. **Formulario para Crear Pronóstico:**
+    - Los usuarios pueden crear un pronóstico de manera fácil y muy intuitiva.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948371/Captura_de_pantalla_2024-05-17_141639_dzchpl.png" alt="Formulario para Esconder Tesoros" width="650px"/>
+    </p>
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+3. **Lista de todas tus Apuestas:**
+    - Esta sección muestra todos tus pronósticos realizados, ordenados por fecha. Tambien aparece si es ganado, perdido o nulo, y los beneficios obtenidos de este.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948372/Captura_de_pantalla_2024-05-17_141705_ozlqgz.png" alt="Listado Apuestas" width="650px"/>
+    </p>
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
+4. **Estadísticas:**
+    - Esta sección muestra todas tus estadísticas, Se calculan automáticamente al determinarse el resultado de un pronóstico.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948372/Captura_de_pantalla_2024-05-17_141718_smcrpb.png" alt="Listado Apuestas" width="650px"/>
+    </p>
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+5. **Rankings de Mejores Pronosticadores:**
+    - En este Ranking aparecen todos los pronosticadores ordenados de mejor a peor. Los usuarios pueden ver más estadísticas sobre el pronosticador y contratar sus servicios desde unos enlaces que hay en este mismo componente.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948372/Captura_de_pantalla_2024-05-17_141728_ct8a6b.png" alt="Rankings de Usuarios" width="650px"/>
+    </p>
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+6. **Perfil de Usuario:**
+    - Los usuarios pueden visualizar y editar su información personal, junto con sus estadísticas completas, así como actualizar su foto de perfil y nombre de usuario.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948373/Captura_de_pantalla_2024-05-17_141803_fn4z30.png" alt="Perfil de Usuario" width="650px"/>
+    </p>
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+7. **Adicionales:**
+    - Footer: Elegida la información adicional más relevante.
+    - Sección Sobre Nosotros: Para conocer más sobre el prpósito del sitio web.
+    - Sección de acceso rápido a las diferentes funciones de la web.
+  
+      <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1715948371/Captura_de_pantalla_2024-05-17_141622_zuiu4l.png" alt="Perfil de Usuario" width="650px"/>
+      </p>
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+<!-- Tecnologías utilizadas -->
+<h3 align="left">Tecnologías utilizadas:</h3>
 
-### Undo a migration
+<!-- Frontend -->
+<h4 align="left">Frontend</h4>
+<p align="left">
+    - React, Javascript, HTML, CSS, Bootstrap, Axios
+</p>
 
-You are also able to undo a migration by running
+<!-- Backend -->
+<h4 align="left">Backend</h4>
+<p align="left">
+    - Python, Flask, Flask SQLAlchemy, JWT, PostgreSQL
+</p>
 
-```sh
-$ pipenv run downgrade
-```
-
-### Backend Populate Table Users
-
-To insert test users in the database execute the following command:
-
-```sh
-$ flask insert-test-users 5
-```
-
-And you will see the following message:
-
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
-
-### **Important note for the database and the data inside it**
-
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
-
-### Front-End Manual Installation:
-
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
-
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+<!-- Seguridad de la Plataforma -->
+<h3 align="left">Seguridad de la Plataforma:</h3>
+<ul>
+    <li>JWT (JSON Web Tokens): Implementación de JWT para gestionar la autenticación de los usuarios de forma segura.</li>
+    <li>Bcrypt para Hash de Contraseñas: Implementación Bcrypt para cifrar las contraseñas de los usuarios antes de almacenarlas en nuestra la de datos.</li>
