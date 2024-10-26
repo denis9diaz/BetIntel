@@ -1,3 +1,939 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+/* CSS de Navbar*/
+
+.navbar-custom {
+    background-color: #e7e7e7; 
+    border-bottom: 1px solid #00A97F;
+    font-family: 'Exo 2', sans-serif;
+    height: auto;
+    align-items: center;
+}
+
+.logo-name-navbar a,
+.navbar-brand.h1 {
+    color: #00A97F; 
+}
+
+.logo-nav{
+    height: 90px;
+    width: 110px;
+    margin-top: 8px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icono-nav{
+    height: 55px;
+    width: 55px;
+    margin-right: 6px;
+}
+
+.boton-toggler button {
+    background-color: transparent;
+    border: none;
+    color: #3f865d;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.boton-toggler button:hover {
+    color: #1e9b0d;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    min-width: 10rem;
+    padding: 0.5rem 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #212529;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.dropdown-menu .logout {
+    color: #dc3545;
+}
+
+.dropdown-menu .logout:hover {
+    background-color: #f8d7da;
+}
+
+.boton-navbar {
+    color: #fff; 
+}
+
+.boton-navbar:hover {
+    opacity: 0.8; 
+}
+
+/* CSS de Formularios */
+
+.registro{
+    min-height: 100vh;
+}
+
+.login{
+    min-height: 100vh;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 20px; 
+    border: 1px solid #e1e1e1; 
+    border-radius: 10px; 
+    background-color: rgba(230, 230, 230, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.auth-container-login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 20px; 
+    border: 1px solid #e1e1e1; 
+    border-radius: 10px; 
+    background-color: rgba(230, 230, 230, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #333; 
+    font-size: 24px; 
+}
+
+.input-group {
+    margin-bottom: 30px; 
+    position: relative; 
+}
+
+.label-form {
+    display: block;
+    margin-bottom: 10px; 
+    color: #555;
+    font-weight: 600; 
+}
+
+.input-form {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: #fff; 
+    font-size: 16px; 
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(10%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.error-message {
+    color: red; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 14px; 
+}
+
+.btn-success {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00A97F; 
+    color: #fff; 
+    font-size: 18px; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-success:hover {
+    background-color: #04795c; 
+}
+
+.link-register{
+    color: #00A97F;
+}
+
+/* CSS de SeccionPrimaria */
+
+.home-container {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.image-title{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction-section {
+    background-image: linear-gradient(to top, #b4b4b4, #f1f1f1);    background-size: cover;
+    background-position: center;
+    padding-top: 7rem;
+    min-height: 100vh;
+}
+  
+.container-intro {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-subtitle {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 80px;
+    color: #2f332f; 
+    font-style: italic; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.home-introduction {
+    color: rgb(0, 0, 0);
+    padding-bottom: 30px;
+}
+
+.intro-section-left,
+.intro-section-right {
+    flex: 0.45;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+
+.intro-section-left:hover,
+.intro-section-right:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.intro-section-right {
+    margin-left: 1rem;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    font-size: 30px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9); 
+    gap: 1rem;
+}
+
+.what-title, .how-title {
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.introduction-list, .how-it-works-list, .sub-stats-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+}
+
+.introduction-item, .how-it-works-item, .sub-stats-item, .what-item, .how-list-item {
+    margin-bottom: 10px;
+    padding-left: 10px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) !important; 
+    font-size: 18px !important;
+}
+
+.sub-stats-list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 35px;
+}
+
+.home-introduction .icon, .home-introduction .sub-icon {
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+.what-item, .how-list-item, .sub-stats-item {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.what-title, .how-title {
+    font-size: 30px;
+    font-weight: bold !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9); 
+    color: rgb(3, 3, 3); 
+}
+
+.what-subtitle{
+    font-weight: bold !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9); 
+    color: rgb(0, 0, 0); 
+    font-size: 22px;
+    padding-bottom: 11px;
+    padding-top: 18px;
+    font-style: italic;
+}
+
+.what-subtitle-2{
+    font-weight: bold !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9); 
+    color: rgb(0, 0, 0); 
+    font-size: 22px;
+    padding-bottom: 11px;
+    padding-top: 55px;
+    font-style: italic;
+}
+
+/* CSS de SeccionSecundaria */
+
+.seccion-secundaria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #b4b4b4, #ffffff);
+    padding: 50px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ebebeb;
+}
+
+.container {
+    text-align: center;
+}
+
+.home-new-bet, .home-stats, .home-top-users .home-my-bets{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.home-new-bet h2, .home-stats h2, .home-top-users h2, .home-my-bets h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.bet-title, .stats-title-home, .rankings-title-home, .pron-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.icono-section {
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.3s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 110px;
+    width: 110px;
+}
+
+.icono-section img {
+    width: 100px; 
+    height: auto;
+}
+
+.icono-section:hover {
+    transform: scale(1.2);
+}
+
+/* CSS de NewBet*/
+
+.new-bet-container {
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.new-bet-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    color: #00A97F; 
+}
+
+.new-bet-form-container {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.new-bet-form {
+    width: 600px; 
+    padding: 20px;
+    border: 2px solid #00A97F; 
+    border-radius: 8px;
+    background-color: #e6e6e6;
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #00A97F; 
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 1px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px; 
+    font-size: 18px;
+    color: #fff;
+    background-color: #00A97F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #20683e; 
+}
+
+/* CSS de MyBets*/
+
+.my-bet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.my-bet-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00A97F !important;
+}
+
+.my-bet-table-container {
+    max-width: 90%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 15px; 
+}
+
+.my-bet-table {
+    width: 80%;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.my-bet-table th,
+.my-bet-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #acacac; 
+    border-right: 1px solid #ddd; 
+    border-left: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.my-bet-table th {
+    background-color: #00A97F;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.my-bet-table tbody tr:nth-child(even) {
+    background: linear-gradient(315deg, #ebebebce, #ffffffd5) !important;
+}
+
+.my-bet-table tbody tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+.my-bet-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.my-bet-table tbody tr:not(.won):not(.lost):not(.void) td {
+    background: linear-gradient(315deg, #ebebeb, #fff);
+}
+
+.won,
+.lost,
+.void {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.won {
+    background: linear-gradient(315deg, #e2ffc1, #c5f88b) !important;
+}
+
+.lost {
+    background: linear-gradient(315deg, #ffc6c2, #fd918a) !important;
+}
+
+.void {
+    background: linear-gradient(315deg, #d9edff, #afd8fa) !important;
+}
+
+
+/* CSS de Stats*/
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.stats-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00A97F; 
+}
+
+.stats-details {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.table {
+    width: 35%; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f7f7f7, #d6d6d6); 
+    margin-bottom: 35px; 
+}
+
+.h2-stats {
+    background: linear-gradient(135deg, #5ab881, #00A97F);
+    color: white;
+    font-size: 20px;
+    padding: 15px; 
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.table-stats {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.tr-stats {
+    border-bottom: 1px solid #ffffff;
+}
+
+.td-stats {
+    padding: 15px;
+    text-align: left;
+    border-right: 1px solid #ffffff;
+}
+
+/* CSS de Ranking*/
+
+.ranking {
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.ranking-title {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+    color: #00A97F;
+}
+
+.rankings-table {
+    width: 75%; 
+    border-collapse: collapse;
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rankings-header th {
+    background-color: #00A97F;
+    color: white;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    border-bottom: 2px solid #fff;
+    border-right: 1px solid white;
+}
+
+.rankings-header th:last-child {
+    border-right: none;
+}
+
+.rankings-data td {
+    position: relative;
+    border: 1px solid #cecece;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease;
+}
+
+.rankings-data td:nth-child(1) {
+    width: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rankings-data td:nth-child(2) {
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rankings-data td:nth-child(3) {
+    width: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rankings-data td:nth-child(4) {
+    width: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rankings-data td:nth-child(5),
+.rankings-data td:nth-child(6) {
+    width: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rankings-data tr:nth-child(1) td,
+.rankings-data tr:nth-child(2) td,
+.rankings-data tr:nth-child(3) td {
+    background-color: #f7f7f7;
+}
+
+.rankings-data tr:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) td {
+    background: linear-gradient(rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 1)); 
+}
+
+.rankings-data tr.top-rank td {
+    position: relative;
+}
+
+.rankings-data tr.top-rank td:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top left, rgba(255, 215, 0, 0.5), transparent);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 0 0 6px 0;
+}
+
+.rankings-data tr.top-rank:nth-child(2) td:after {
+    background: linear-gradient(to top left, rgba(192, 192, 192, 0.5), transparent);
+}
+
+.rankings-data tr.top-rank:nth-child(3) td:after {
+    background: linear-gradient(to top left, rgba(205, 127, 50, 0.5), transparent);
+}
+
+
+.cup-icon {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: black;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.button {
+    --color: #00A97F;
+    padding: 0.5em 1em;
+    background-color: whitesmoke;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 2;
+}
+
+.button::before, 
+.button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before, 
+.button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(10, 25, 30);
+    background-color: rgba(0, 169, 127, 0.2); 
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+.button-pag {
+    padding: 0.4rem 0.7rem;
+    background-color: #00A97F;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-pag:hover {
+    background-color: #007F5F;
+}
+
+.span-pag {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.link-user {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-user:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS de Footer */
+
+.footer {
+    background: linear-gradient(to bottom, #585858, #000000);
+    color: #fff;
+    padding: 60px 0;
+    font-family: 'Exo 2', sans-serif;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.footer h4 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.footer p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer .list-inline-item {
+    margin-right: 20px;
+}
+
+.footer .fab {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer .fab:hover {
+    color: #38d39f;
+}
+
+.about-us {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.about-us:hover {
+    color: #38d39f; 
+}
+
+.logo-footer{
+    padding-top: 20px;
+    width: 220px;
+}
+
+.logo-footer-div{
+    padding-left: 9rem;
+
+}
+
+/* CSS de About*/
+
+.about {
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.about-title {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+    color: #00A97F;
+}
+
+/* CSS de Profile*/
+
+.profile {
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #ffffff, #a5a5a5); 
+}
+
+.profile-data,
+.profile-stats {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.profile-data {
+    text-align: center;
+}
+
+.photo-user {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-username {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #08AA7F !important;
+}
+
+.user-username {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333; 
+}
+
+.user-email {
+    color: #666; 
+    font-size: 1.7rem;
+}
+
+/* CSS de User*/
+
